@@ -1,4 +1,4 @@
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 
 const navLinks = document.querySelectorAll('.nav-links a');
 navLinks.forEach((link) => {

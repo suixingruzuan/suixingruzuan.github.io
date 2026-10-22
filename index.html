@@ -3,24 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="suixingruzuan 的个人网站，分享作品、经历和联系方式" />
-    <title>suixingruzuan | Personal Website</title>
+    <meta
+      name="description"
+      content="suixingruzuan 的个人博客与日记站，记录思考、学习和生活。"
+    />
+    <title>suixingruzuan · Blog & Diary</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-glow glow-1"></div>
-    <div class="bg-glow glow-2"></div>
+    <div class="bg-noise"></div>
 
     <header class="site-header">
       <nav class="nav container">
-        <a href="#home" class="logo">suixingruzuan</a>
+        <a href="#home" class="brand">suixingruzuan</a>
         <div class="nav-links">
+          <a href="#home">首页</a>
           <a href="#about">关于</a>
-          <a href="#skills">技能</a>
-          <a href="#projects">作品</a>
+          <a href="#posts">博客</a>
+          <a href="#diary">日记</a>
           <a href="#contact">联系</a>
         </div>
         <a class="button button-small" href="https://github.com/suixingruzuan" target="_blank" rel="noreferrer">GitHub</a>
@@ -29,111 +35,140 @@
 
     <main>
       <section id="home" class="hero container">
-        <div class="hero-content">
-          <p class="eyebrow">Hello, world 👋</p>
-          <h1>我是 <span>suixingruzuan</span></h1>
-          <p class="subtitle">我是一名热爱编程、喜欢构建产品和探索新技术的人。</p>
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Blog</p>
+          <h1>记录想法，见证成长。</h1>
+          <p class="subtitle">
+            我是 suixingruzuan，喜欢写代码、观察世界、整理学习笔记，也记录生活中的一点点变化。
+          </p>
+
           <div class="cta-row">
-            <a class="button" href="#projects">查看作品</a>
-            <a class="button button-secondary" href="#contact">联系我</a>
+            <a class="button" href="#posts">阅读博客</a>
+            <a class="button button-secondary" href="#diary">看日记</a>
           </div>
-          <ul class="meta-list">
+
+          <ul class="quick-facts">
             <li>前端开发</li>
-            <li>学习者</li>
-            <li>GitHub Pages 托管</li>
+            <li>学习笔记</li>
+            <li>生活记录</li>
           </ul>
         </div>
 
-        <div class="hero-card">
-          <div class="card-badge">Currently</div>
-          <h3>Building ideas into web experiences</h3>
-          <div class="mini-stats">
+        <aside class="hero-panel">
+          <div class="panel-label">Latest</div>
+          <h3>“写下来，才知道自己在想什么。”</h3>
+          <div class="mini-grid">
             <div>
-              <strong>1+</strong>
-              <span>Years learning</span>
+              <strong>18</strong>
+              <span>篇文章</span>
             </div>
             <div>
-              <strong>10+</strong>
-              <span>Side projects</span>
+              <strong>42</strong>
+              <span>条日记</span>
             </div>
             <div>
               <strong>∞</strong>
-              <span>Curiosity</span>
+              <span>持续更新</span>
             </div>
           </div>
-        </div>
+        </aside>
       </section>
 
       <section id="about" class="section container">
-        <div class="section-header">
-          <p class="eyebrow">About Me</p>
+        <div class="section-head">
+          <p class="eyebrow">About</p>
           <h2>关于我</h2>
         </div>
+
         <div class="about-grid">
-          <div class="text-panel">
+          <div class="card">
             <p>
-              我热爱研究前端技术、产品体验和编程思维，喜欢把想法落地成真实可用的页面和工具。
+              我热爱编程，也喜欢把自己的学习过程、思考和体会写下来。这里用于记录技术实践、生活感悟和成长轨迹。
             </p>
             <p>
-              这个网站使用 GitHub Pages 托管，方便展示我的作品、技能和项目动态，也适合持续更新个人品牌。
+              这个站点使用 GitHub Pages 托管，适合长期更新，并作为个人品牌的一部分持续存在。
             </p>
           </div>
-          <div class="info-panel">
+
+          <div class="card info-card">
             <div><span>姓名</span><strong>suixingruzuan</strong></div>
-            <div><span>方向</span><strong>Web / Front-end</strong></div>
-            <div><span>状态</span><strong>学习中 / 持续成长</strong></div>
-            <div><span>所在地</span><strong>中国</strong></div>
+            <div><span>方向</span><strong>Web / Learning</strong></div>
+            <div><span>状态</span><strong>持续成长中</strong></div>
+            <div><span>站点</span><strong>GitHub Pages</strong></div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section section-alt">
+      <section id="posts" class="section section-alt">
         <div class="container">
-          <div class="section-header">
-            <p class="eyebrow">Skills</p>
-            <h2>我的技能栈</h2>
+          <div class="section-head">
+            <p class="eyebrow">Blog</p>
+            <h2>博客文章</h2>
           </div>
-          <div class="skills-grid">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>UI/UX</span>
-            <span>Web Design</span>
-            <span>Problem Solving</span>
+
+          <div class="post-grid">
+            <article class="post-card">
+              <span class="tag">前端</span>
+              <h3>从零开始搭建一个 GitHub Pages 个人站</h3>
+              <p>记录如何用简单的 HTML/CSS/JS 把想法落地成一个可访问的个人网站。</p>
+              <div class="meta-row">
+                <span>2026-10-22</span>
+                <a href="#">Read more →</a>
+              </div>
+            </article>
+
+            <article class="post-card">
+              <span class="tag">学习</span>
+              <h3>为什么写作是提升技术能力的关键</h3>
+              <p>技术成长不仅靠代码，还靠输出。写清楚自己的理解，才更容易形成系统认知。</p>
+              <div class="meta-row">
+                <span>2026-10-18</span>
+                <a href="#">Read more →</a>
+              </div>
+            </article>
+
+            <article class="post-card">
+              <span class="tag">生活</span>
+              <h3>关于慢节奏生活的重新理解</h3>
+              <p>有时候，真正重要的不是效率，而是让自己更有节奏地活着。</p>
+              <div class="meta-row">
+                <span>2026-10-10</span>
+                <a href="#">Read more →</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section container">
-        <div class="section-header">
-          <p class="eyebrow">Projects</p>
-          <h2>精选作品</h2>
+      <section id="diary" class="section container">
+        <div class="section-head">
+          <p class="eyebrow">Diary</p>
+          <h2>日记记录</h2>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-tag">Web</div>
-            <h3>个人首页</h3>
-            <p>一个简洁、现代的个人品牌主页，适合展示自我介绍、作品和联系方式。</p>
-            <a href="https://github.com/suixingruzuan/suixingruzuan.github.io" target="_blank" rel="noreferrer">查看源码</a>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="time">10.22</div>
+            <div class="timeline-content">
+              <h3>开始做个人博客</h3>
+              <p>今天终于把网站框架搭起来，准备把学习和生活记录下来，像保存一份自己的成长轨迹。</p>
+            </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-tag">Game</div>
-            <h3>贪吃蛇小游戏</h3>
-            <p>使用原生 JavaScript 实现的小游戏，适合学习前端交互与 canvas 相关知识。</p>
-            <a href="https://github.com/suixingruzuan/suixingruzuan.github.io" target="_blank" rel="noreferrer">了解更多</a>
+          <article class="timeline-item">
+            <div class="time">10.18</div>
+            <div class="timeline-content">
+              <h3>关于输出和反馈</h3>
+              <p>意识到表达是一种对自我认知的整理。写下来之后，很多模糊的想法会突然变清晰。</p>
+            </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-tag">Tool</div>
-            <h3>个人工具集</h3>
-            <p>持续收集和开发高效���小工具，提升工作效率与学习体验。</p>
-            <a href="https://github.com/suixingruzuan" target="_blank" rel="noreferrer">GitHub 主页</a>
+          <article class="timeline-item">
+            <div class="time">10.11</div>
+            <div class="timeline-content">
+              <h3>小小的整理与复盘</h3>
+              <p>今天花时间整理工作和学习状态，开始慢慢接受不完美和迭代的必要性。</p>
+            </div>
           </article>
         </div>
       </section>
@@ -142,7 +177,7 @@
         <div class="container contact-box">
           <div>
             <p class="eyebrow">Contact</p>
-            <h2>让我们聊聊</h2>
+            <h2>联系我</h2>
           </div>
           <div class="contact-actions">
             <a class="button" href="https://github.com/suixingruzuan" target="_blank" rel="noreferrer">GitHub</a>
@@ -155,19 +190,13 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> suixingruzuan</p>
-        <p>Powered by GitHub Pages</p>
+        <p>Built with GitHub Pages</p>
       </div>
     </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
 
 
 
