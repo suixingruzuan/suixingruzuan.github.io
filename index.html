@@ -1,26 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贪吃蛇游戏</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        canvas {
-            border: 1px solid #000;
-        }
-    </style>
-</head>
-<body>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
-    <script src="snake.js"></script>
-</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="suixingruzuan 的个人网站，分享作品、经历和联系方式" />
+    <title>suixingruzuan | Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#home" class="logo">suixingruzuan</a>
+        <div class="nav-links">
+          <a href="#about">关于</a>
+          <a href="#skills">技能</a>
+          <a href="#projects">作品</a>
+          <a href="#contact">联系</a>
+        </div>
+        <a class="button button-small" href="https://github.com/suixingruzuan" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">Hello, world 👋</p>
+          <h1>我是 <span>suixingruzuan</span></h1>
+          <p class="subtitle">我是一名热爱编程、喜欢构建产品和探索新技术的人。</p>
+          <div class="cta-row">
+            <a class="button" href="#projects">查看作品</a>
+            <a class="button button-secondary" href="#contact">联系我</a>
+          </div>
+          <ul class="meta-list">
+            <li>前端开发</li>
+            <li>学习者</li>
+            <li>GitHub Pages 托管</li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-badge">Currently</div>
+          <h3>Building ideas into web experiences</h3>
+          <div class="mini-stats">
+            <div>
+              <strong>1+</strong>
+              <span>Years learning</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span>Side projects</span>
+            </div>
+            <div>
+              <strong>∞</strong>
+              <span>Curiosity</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-header">
+          <p class="eyebrow">About Me</p>
+          <h2>关于我</h2>
+        </div>
+        <div class="about-grid">
+          <div class="text-panel">
+            <p>
+              我热爱研究前端技术、产品体验和编程思维，喜欢把想法落地成真实可用的页面和工具。
+            </p>
+            <p>
+              这个网站使用 GitHub Pages 托管，方便展示我的作品、技能和项目动态，也适合持续更新个人品牌。
+            </p>
+          </div>
+          <div class="info-panel">
+            <div><span>姓名</span><strong>suixingruzuan</strong></div>
+            <div><span>方向</span><strong>Web / Front-end</strong></div>
+            <div><span>状态</span><strong>学习中 / 持续成长</strong></div>
+            <div><span>所在地</span><strong>中国</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Skills</p>
+            <h2>我的技能栈</h2>
+          </div>
+          <div class="skills-grid">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>UI/UX</span>
+            <span>Web Design</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-header">
+          <p class="eyebrow">Projects</p>
+          <h2>精选作品</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-tag">Web</div>
+            <h3>个人首页</h3>
+            <p>一个简洁、现代的个人品牌主页，适合展示自我介绍、作品和联系方式。</p>
+            <a href="https://github.com/suixingruzuan/suixingruzuan.github.io" target="_blank" rel="noreferrer">查看源码</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Game</div>
+            <h3>贪吃蛇小游戏</h3>
+            <p>使用原生 JavaScript 实现的小游戏，适合学习前端交互与 canvas 相关知识。</p>
+            <a href="https://github.com/suixingruzuan/suixingruzuan.github.io" target="_blank" rel="noreferrer">了解更多</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Tool</div>
+            <h3>个人工具集</h3>
+            <p>持续收集和开发高效���小工具，提升工作效率与学习体验。</p>
+            <a href="https://github.com/suixingruzuan" target="_blank" rel="noreferrer">GitHub 主页</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>让我们聊聊</h2>
+          </div>
+          <div class="contact-actions">
+            <a class="button" href="https://github.com/suixingruzuan" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="mailto:hello@example.com">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> suixingruzuan</p>
+        <p>Powered by GitHub Pages</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
